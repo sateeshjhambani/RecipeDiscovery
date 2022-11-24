@@ -7,14 +7,16 @@ import com.bumptech.glide.request.RequestOptions
 import com.sateeshjh.recipedirectory.R
 
 @BindingAdapter("urlToImage")
-fun urlToImage(view: ImageView, str: String) {
+fun urlToImage(view: ImageView, str: String?) {
 
-    val options = RequestOptions
-        .placeholderOf(R.drawable.loading)
-        .error(R.drawable.error)
+    str?.let {
+        val options = RequestOptions
+            .placeholderOf(R.drawable.loading)
+            .error(R.drawable.error)
 
-    Glide.with(view)
-        .setDefaultRequestOptions(options)
-        .load(str)
-        .into(view)
+        Glide.with(view)
+            .setDefaultRequestOptions(options)
+            .load(it)
+            .into(view)
+    }
 }
