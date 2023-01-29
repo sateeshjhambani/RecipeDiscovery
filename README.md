@@ -1,2 +1,1 @@
-# RecipeDiscovery
-![Recipe Discovery](https://user-images.githubusercontent.com/60574717/203918248-8715a045-f864-4bba-be54-8c179dfbba15.jpg)
+![Recipe Discovery App Board](https://user-images.githubusercontent.com/60574717/215348231-36847ab5-9a14-4df4-9681-7ae6ad4b78b1.jpg)
